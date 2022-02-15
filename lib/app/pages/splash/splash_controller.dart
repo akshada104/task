@@ -9,9 +9,11 @@ class SplashController extends GetxController {
 
   final SplashPresenter _splashPresenter;
 
-  @override
-  void onInit() {
-    _splashPresenter.toString();
-    super.onInit();
+  var tabIndex = 0;
+
+  /// used to change the Page using bottom nav bar
+  void changeTabIndex(int index) {
+    tabIndex = index;
+    update();
   }
 }

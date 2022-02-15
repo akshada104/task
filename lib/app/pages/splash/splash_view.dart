@@ -1,54 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:task/app/app.dart';
 
 class SplashView extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         backgroundColor: Colors.black,
-        bottomNavigationBar: SizedBox(
-          height: 80,
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: ClipRRect(
-              child: BottomNavigationBar(
-                showSelectedLabels: false,
-                showUnselectedLabels: false,
-                type: BottomNavigationBarType.fixed,
-                backgroundColor: Colors.grey[900],
-                elevation: 0,
-                items: const [
-                  BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.home,
-                      color: Colors.deepOrange,
-                    ),
-                    label: '',
-                  ),
-                  BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.star,
-                      color: Colors.grey,
-                    ),
-                    label: '',
-                  ),
-                  BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.save_alt,
-                      color: Colors.grey,
-                    ),
-                    label: '',
-                  ),
-                  BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.dashboard_rounded,
-                      color: Colors.grey,
-                    ),
-                    label: '',
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
         body: Column(
           children: [
             const SizedBox(
